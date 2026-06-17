@@ -1,9 +1,11 @@
 [phases.setup]
-nixPkgs = ["...", "python3"] # Mantiene el entorno base
 aptPkgs = [
   "libgl1-mesa-glx",
   "libglib2.0-0",
   "libxcb1",
   "libx11-6",
-  "libxext6"
+  "libxext6",
+  "libxrender1",
+  "libxtst6",
+  "libxi6"
 ]
