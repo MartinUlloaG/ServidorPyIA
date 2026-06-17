@@ -1,8 +1,9 @@
-FROM python:3.11-slim
+FROM python:3.11-slim-bookworm
 
 # Instalar las librerías del sistema requeridas para OpenCV y MediaPipe
+# Nota: Reemplazamos libgl1-mesa-glx por libgl1, que es el estándar moderno compatible con Debian Bookworm
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    libgl1-mesa-glx \
+    libgl1 \
     libglib2.0-0 \
     libxcb1 \
     libx11-6 \
