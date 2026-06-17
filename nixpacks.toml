@@ -1,0 +1,10 @@
+[providers.python]
+libs = [
+  "libglvnd",     # Para controladores de OpenGL (libGL.so.1)
+  "glib",          # Para hilos del sistema (libgthread-2.0.so.0)
+  "xorg.libxcb",   # Para el sistema de ventanas XCB (libxcb.so.1) - ¡SOCIOS DEL CRASH!
+  "xorg.libX11",   # Protocolo base de X11 (libX11.so.6)
+  "xorg.libXext"   # Extensiones de X11 (libXext.so.6)
+]
+```
+eof
